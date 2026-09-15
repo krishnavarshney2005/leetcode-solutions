@@ -29,8 +29,9 @@ class Solution {
                 p.next = p.child;
                 p.child.prev = p;
                 p.child = null;
-
+                 p = p.next;
             }
+           
         }
         return head;
     }
